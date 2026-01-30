@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jurusan - SMK Negeri 1 Cikarang Selatan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <img src="https://i.ytimg.com/vi/6v_6yStDr5Q/maxresdefault.jpg" alt="Logo SMKN 1 Cikarang Selatan" style="height: 45px; border-radius: 50%; margin-right: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+                    <span>SMKN 1 CIKARANG SELATAN</span>
+                </div>
+                <button class="mobile-toggle" id="mobileToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="jurusan.html" class="active">Jurusan</a></li>
+                    <li><a href="ekstrakurikuler.html">Ekstrakurikuler</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header dengan background gambar sekolah -->
+    <section class="page-header" style="background-image: url('https://indonesiaparlemen.com/wp-content/uploads/2022/09/SMKN-1-cikarang-selatan.jpeg'); background-size: cover; background-position: center; background-attachment: fixed; position: relative;">
+        <div style="position: absolute; inset: 0; background: rgba(30, 64, 175, 0.65);"></div> <!-- Overlay biru gelap untuk kontras teks -->
+        <div class="container" style="position: relative; z-index: 2;">
+            <h1>Kompetensi Keahlian</h1>
+            <p>Pilih jurusan sesuai minat dan bakatmu untuk masa depan yang cerah</p>
+        </div>
+    </section>
+
+    <!-- Jurusan Detail - Teknik Elektro (nama jurusan dalam kotak aesthetic) -->
+    <section class="jurusan-detail" id="elektro">
+        <div class="container">
+            <div class="jurusan-content">
+                <div class="jurusan-icon-large">
+                    <i class="fas fa-microchip"></i>
+                </div>
+                <div class="jurusan-text">
+                    <h2>Teknik Elektro</h2>
+                    <p class="jurusan-subtitle">Elektronika Industri & Otomasi</p>
+                    <p>Fokus pada instalasi listrik, elektronika, mikrokontroler, PLC, dan sistem kontrol otomasi industri. Lulusan siap bekerja di bidang manufaktur dan otomasi pabrik.</p>
+                    
+                    <h3>Kompetensi yang Dipelajari:</h3>
+                    <ul class="skill-list">
+                        <li><i class="fas fa-check-circle"></i> Instalasi listrik rumah & industri</li>
+                        <li><i class="fas fa-check-circle"></i> Elektronika analog & digital</li>
+                        <li><i class="fas fa-check-circle"></i> Pemrograman mikrokontroler (Arduino, ESP32)</li>
+                        <li><i class="fas fa-check-circle"></i> Programmable Logic Controller (PLC)</li>
+                        <li><i class="fas fa-check-circle"></i> Sistem otomasi & SCADA</li>
+                        <li><i class="fas fa-check-circle"></i> Instrumentasi & pengukuran</li>
+                    </ul>
+
+                    <h3>Prospek Karir:</h3>
+                    <div class="career-tags">
+                        <span>Teknisi Otomasi Pabrik</span>
+                        <span>Programmer PLC</span>
+                        <span>Teknisi Elektronika</span>
+                        <span>Panel Maker</span>
+                        <span>Maintenance Engineer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teknik Jaringan Komputer dan Telekomunikasi -->
+    <section class="jurusan-detail alternate" id="tkj">
+        <div class="container">
+            <div class="jurusan-content">
+                <div class="jurusan-text">
+                    <h2>Teknik Jaringan Komputer dan Telekomunikasi (TJKT)</h2>
+                    <p class="jurusan-subtitle">Networking • Cybersecurity • Cloud</p>
+                    <p>Menguasai jaringan komputer, server, keamanan siber, dan teknologi telekomunikasi terkini. Lulusan sangat dicari di era digital 4.0.</p>
+                    
+                    <h3>Kompetensi yang Dipelajari:</h3>
+                    <ul class="skill-list">
+                        <li><i class="fas fa-check-circle"></i> Desain & instalasi jaringan LAN/WAN</li>
+                        <li><i class="fas fa-check-circle"></i> Cisco CCNA (routing & switching)</li>
+                        <li><i class="fas fa-check-circle"></i> Mikrotik & wireless technology</li>
+                        <li><i class="fas fa-check-circle"></i> Administrasi server Linux/Windows</li>
+                        <li><i class="fas fa-check-circle"></i> Cybersecurity & ethical hacking</li>
+                        <li><i class="fas fa-check-circle"></i> Fiber optik & telekomunikasi</li>
+                    </ul>
+
+                    <h3>Prospek Karir:</h3>
+                    <div class="career-tags">
+                        <span>Network Engineer</span>
+                        <span>System Administrator</span>
+                        <span>Cybersecurity Analyst</span>
+                        <span>IT Support Specialist</span>
+                        <span>Teknisi Fiber Optik</span>
+                    </div>
+                </div>
+                <div class="jurusan-icon-large">
+                    <i class="fas fa-network-wired"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teknik Mesin -->
+    <section class="jurusan-detail" id="mesin">
+        <div class="container">
+            <div class="jurusan-content">
+                <div class="jurusan-icon-large">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <div class="jurusan-text">
+                    <h2>Teknik Mesin</h2>
+                    <p class="jurusan-subtitle">Pemesinan • Fabrikasi • CNC</p>
+                    <p>Belajar mengoperasikan dan memprogram mesin bubut, frais, CNC, serta teknik pengelasan dan fabrikasi logam untuk industri manufaktur.</p>
+                    
+                    <h3>Kompetensi yang Dipelajari:</h3>
+                    <ul class="skill-list">
+                        <li><i class="fas fa-check-circle"></i> Gambar teknik & CAD/CAM</li>
+                        <li><i class="fas fa-check-circle"></i> Pemesinan konvensional (bubut, frais)</li>
+                        <li><i class="fas fa-check-circle"></i> Pemrograman CNC milling & turning</li>
+                        <li><i class="fas fa-check-circle"></i> Teknik pengelasan (SMAW, MIG, TIG)</li>
+                        <li><i class="fas fa-check-circle"></i> Fabrikasi logam & konstruksi</li>
+                        <li><i class="fas fa-check-circle"></i> Metrologi & pengukuran presisi</li>
+                    </ul>
+
+                    <h3>Prospek Karir:</h3>
+                    <div class="career-tags">
+                        <span>Operator CNC</span>
+                        <span>Programmer CAM</span>
+                        <span>Teknisi Fabrikasi</span>
+                        <span>Welder Industri</span>
+                        <span>Quality Control</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Akuntansi dan Keuangan Lembaga -->
+    <section class="jurusan-detail alternate" id="akl">
+        <div class="container">
+            <div class="jurusan-content">
+                <div class="jurusan-text">
+                    <h2>Akuntansi dan Keuangan Lembaga</h2>
+                    <p class="jurusan-subtitle">Akuntansi Digital • Perpajakan • Keuangan</p>
+                    <p>Menguasai pembukuan, laporan keuangan, perpajakan, dan software akuntansi modern untuk perusahaan dan lembaga.</p>
+                    
+                    <h3>Kompetensi yang Dipelajari:</h3>
+                    <ul class="skill-list">
+                        <li><i class="fas fa-check-circle"></i> Siklus akuntansi perusahaan jasa/dagang</li>
+                        <li><i class="fas fa-check-circle"></i> Akuntansi keuangan & biaya</li>
+                        <li><i class="fas fa-check-circle"></i> Perpajakan (PPh, PPN, e-Faktur)</li>
+                        <li><i class="fas fa-check-circle"></i> Software akuntansi (MYOB, Zahir, Accurate)</li>
+                        <li><i class="fas fa-check-circle"></i> Audit & pengendalian internal</li>
+                        <li><i class="fas fa-check-circle"></i> Manajemen keuangan lembaga</li>
+                    </ul>
+
+                    <h3>Prospek Karir:</h3>
+                    <div class="career-tags">
+                        <span>Akuntan Junior</span>
+                        <span>Staff Pajak</span>
+                        <span>Accounting Software Specialist</span>
+                        <span>Admin Keuangan</span>
+                        <span>Finance Officer</span>
+                    </div>
+                </div>
+                <div class="jurusan-icon-large">
+                    <i class="fas fa-calculator"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teknik Ketenagalistrikan -->
+    <section class="jurusan-detail" id="ketenagalistrikan">
+        <div class="container">
+            <div class="jurusan-content">
+                <div class="jurusan-icon-large">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <div class="jurusan-text">
+                    <h2>Teknik Ketenagalistrikan</h2>
+                    <p class="jurusan-subtitle">Tenaga Listrik • Energi Terbarukan • Smart Grid</p>
+                    <p>Mempelajari pembangkitan, transmisi, distribusi tenaga listrik, serta teknologi energi terbarukan seperti PLTS dan sistem kelistrikan pintar.</p>
+                    
+                    <h3>Kompetensi yang Dipelajari:</h3>
+                    <ul class="skill-list">
+                        <li><i class="fas fa-check-circle"></i> Sistem pembangkit listrik</li>
+                        <li><i class="fas fa-check-circle"></i> Transmisi & distribusi tenaga listrik</li>
+                        <li><i class="fas fa-check-circle"></i> Gardu induk & panel listrik</li>
+                        <li><i class="fas fa-check-circle"></i> Instalasi listrik tegangan menengah</li>
+                        <li><i class="fas fa-check-circle"></i> Energi terbarukan (PLTS on-grid/off-grid)</li>
+                        <li><i class="fas fa-check-circle"></i> Proteksi & relai listrik</li>
+                    </ul>
+
+                    <h3>Prospek Karir:</h3>
+                    <div class="career-tags">
+                        <span>Teknisi PLN</span>
+                        <span>Operator Pembangkit</span>
+                        <span>Teknisi PLTS</span>
+                        <span>Electrical Supervisor</span>
+                        <span>Smart Grid Technician</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kurikulum Section -->
+    <section class="kurikulum-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Pendidikan</span>
+                <h2 class="section-title">Kurikulum Merdeka</h2>
+            </div>
+            <div class="kurikulum-grid">
+                <div class="kurikulum-card">
+                    <span class="kurikulum-number">1</span>
+                    <h3>Pembelajaran Berbasis Proyek</h3>
+                    <p>Siswa mengerjakan proyek nyata bekerjasama dengan industri untuk pengalaman langsung.</p>
+                </div>
+                <div class="kurikulum-card">
+                    <span class="kurikulum-number">2</span>
+                    <h3>Praktik Kerja Lapangan</h3>
+                    <p>Magang di perusahaan mitra untuk menerapkan ilmu di dunia kerja sesungguhnya.</p>
+                </div>
+                <div class="kurikulum-card">
+                    <span class="kurikulum-number">3</span>
+                    <h3>Sertifikasi Kompetensi</h3>
+                    <p>Lulusan mendapatkan sertifikat kompetensi yang diakui industri nasional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>SMK Negeri 1 Cikarang Selatan</h3>
+                    <p>Sekolah Menengah Kejuruan yang berkomitmen mencetak generasi terampil dan berkarakter.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="profil.html">Profil</a></li>
+                        <li><a href="jurusan.html">Jurusan</a></li>
+                        <li><a href="ekstrakurikuler.html">Ekstrakurikuler</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Jurusan</h4>
+                    <ul>
+                        <li><a href="#elektro">Teknik Elektro</a></li>
+                        <li><a href="#tkj">TJKT</a></li>
+                        <li><a href="#mesin">Teknik Mesin</a></li>
+                        <li><a href="#akl">Akuntansi & Keuangan</a></li>
+                        <li><a href="#ketenagalistrikan">Ketenagalistrikan</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Kontak</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Jalan Raya Cibarusah-Bekasi, Cikarang Selatan, Kabupaten Bekasi, Jawa Barat</li>
+                        <li><i class="fas fa-phone"></i> +62 857-1812-9171</li>
+                        <li><i class="fas fa-envelope"></i> muhammad.rheifand6
+@smk.belajar.id</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SMK Negeri 1 Cikarang Selatan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .page-header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 8rem 0 4rem;
+            margin-top: 70px;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .page-header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .jurusan-detail {
+            padding: 5rem 0;
+        }
+
+        .jurusan-detail.alternate {
+            background: var(--light-color);
+        }
+
+        .jurusan-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .jurusan-detail.alternate .jurusan-content {
+            grid-template-columns: 2fr 1fr;
+        }
+
+        .jurusan-icon-large {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            aspect-ratio: 1;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 8rem;
+            box-shadow: 0 10px 40px rgba(30, 64, 175, 0.3);
+        }
+
+        .jurusan-text h2 {
+            font-size: 2rem;
+            color: var(--dark-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .jurusan-subtitle {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .jurusan-text > p {
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            text-align: justify;
+        }
+
+        .jurusan-text h3 {
+            font-size: 1.3rem;
+            color: var(--dark-color);
+            margin: 2rem 0 1rem;
+        }
+
+        .skill-list {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 2rem;
+        }
+
+        .skill-list li {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 0.8rem;
+            padding: 0.8rem;
+            background: var(--light-color);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .jurusan-detail.alternate .skill-list li {
+            background: white;
+        }
+
+        .skill-list li:hover {
+            transform: translateX(10px);
+            background: white;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .skill-list i {
+            color: var(--success-color);
+            font-size: 1.2rem;
+        }
+
+        .career-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-top: 1rem;
+        }
+
+        .career-tags span {
+            background: var(--primary-color);
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .career-tags span:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(30, 64, 175, 0.3);
+        }
+
+        .kurikulum-section {
+            background: white;
+        }
+
+        .kurikulum-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .kurikulum-card {
+            background: var(--light-color);
+            padding: 2.5rem;
+            border-radius: 15px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .kurikulum-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .kurikulum-number {
+            position: absolute;
+            top: -20px;
+            right: 20px;
+            font-size: 6rem;
+            font-weight: 700;
+            color: rgba(30, 64, 175, 0.1);
+        }
+
+        .kurikulum-card h3 {
+            font-size: 1.3rem;
+            color: var(--dark-color);
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .kurikulum-card p {
+            line-height: 1.7;
+            color: var(--text-color);
+            position: relative;
+            z-index: 2;
+        }
+
+        @media (max-width: 768px) {
+            .jurusan-content {
+                grid-template-columns: 1fr;
+            }
+
+            .jurusan-detail.alternate .jurusan-content {
+                grid-template-columns: 1fr;
+            }
+
+            .jurusan-icon-large {
+                font-size: 5rem;
+                aspect-ratio: 2/1;
+            }
+
+            .page-header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+
+    <script src="script.js"></script>
+</body>
+</html>

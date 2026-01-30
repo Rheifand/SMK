@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - SMK Negeri 1 Cikarang Selatan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <img src="https://i.ytimg.com/vi/6v_6yStDr5Q/maxresdefault.jpg" alt="Logo SMKN 1 Cikarang Selatan" style="height: 40px; margin-right: 10px;">
+                    <span>SMKN 1 CIKARANG SELATAN</span>
+                </div>
+                <button class="mobile-toggle" id="mobileToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="jurusan.html">Jurusan</a></li>
+                    <li><a href="ekstrakurikuler.html">Ekstrakurikuler</a></li>
+                    <li><a href="kontak.html" class="active">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background-image: url('https://indonesiaparlemen.com/wp-content/uploads/2022/09/SMKN-1-cikarang-selatan.jpeg'); background-size: cover; background-position: center;">
+        <div class="container">
+            <h1>Hubungi Kami</h1>
+            <p>Kami siap membantu menjawab pertanyaan Anda</p>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-info-grid">
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Alamat</h3>
+                    <p>Jalan Raya Cibarusah-Bekasi, Cikarang Selatan<br>Kabupaten Bekasi<br>Jawa Barat, Indonesia</p>
+                </div>
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Telepon</h3>
+                    <p>+62 857-1812-9171</p>
+                </div>
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>muhammad.rheifand6
+@smk.belajar.id</p>
+                </div>
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Jam Operasional</h3>
+                    <p>Senin - Jumat: 07.00 - 16.00<br>Sabtu: 07.00 - 12.00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Map Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="form-container">
+                    <h2>Kirim Pesan</h2>
+                    <p class="form-description">Silakan isi formulir di bawah ini untuk menghubungi kami</p>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required placeholder="Masukkan nama lengkap">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required placeholder="contoh@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Nomor Telepon</label>
+                            <input type="tel" id="phone" name="phone" placeholder="08XX-XXXX-XXXX">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subjek <span class="required">*</span></label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Pilih subjek</option>
+                                <option value="ppdb">Pendaftaran Siswa Baru (PPDB)</option>
+                                <option value="info-jurusan">Informasi Jurusan</option>
+                                <option value="fasilitas">Fasilitas Sekolah</option>
+                                <option value="kerjasama">Kerjasama Industri</option>
+                                <option value="lainnya">Lainnya</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Pesan <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Tulis pesan Anda di sini..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <i class="fas fa-paper-plane"></i> Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+                <div class="map-container">
+                    <h2>Lokasi Kami</h2>
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p>Peta Lokasi</p>
+                        <small>SMK Negeri 1 Cikarang Selatan</small>
+                        <small>Jalan Raya Cibarusah-Bekasi, Cikarang Selatan, Kabupaten Bekasi, Jawa Barat</small>
+                    </div>
+                    <div class="location-info">
+                        <h3>Cara Menuju Lokasi</h3>
+                        <ul>
+                            <li><i class="fas fa-car"></i> Dari Jakarta: Akses melalui Tol Jakarta-Cikampek keluar Cikarang Barat/Cikarang Selatan</li>
+                            <li><i class="fas fa-train"></i> Stasiun terdekat: Stasiun Cikarang (15 menit berkendara)</li>
+                            <li><i class="fas fa-bus"></i> Transportasi umum tersedia dari berbagai arah menuju Cikarang Selatan</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social-media-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Ikuti Kami</span>
+                <h2 class="section-title">Media Sosial</h2>
+                <p class="section-description">Tetap terhubung dengan kami melalui media sosial</p>
+            </div>
+            <div class="social-grid">
+                <a href="https://www.facebook.com/p/SMKN-1-Cikarang-Selatan-100072402480755" class="social-card facebook">
+                    <i class="fab fa-facebook-f"></i>
+                    <h3>Facebook</h3>
+                    <p>@smkn1cikarangselatan</p>
+                </a>
+                <a href="https://www.instagram.com/smkn1ciksel_/" class="social-card instagram">
+                    <i class="fab fa-instagram"></i>
+                    <h3>Instagram</h3>
+                    <p>@smkn1ciksel_</p>
+                </a>
+                <a href="https://www.youtube.com/@smknegeri1cikarangselatan" class="social-card youtube">
+                    <i class="fab fa-youtube"></i>
+                    <h3>YouTube</h3>
+                    <p>Smk Negeri 1 Cikarang Selatan</p>
+                </a>
+                <a href="https://twitter.com/smkn_1ciksel" class="social-card twitter">
+                    <i class="fab fa-twitter"></i>
+                    <h3>Twitter</h3>
+                    <p>@smkn_1ciksel</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Pertanyaan</span>
+                <h2 class="section-title">Pertanyaan Umum</h2>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Bagaimana cara mendaftar di sekolah ini?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Pendaftaran melalui jalur PPDB online Kabupaten Bekasi. Silakan kunjungi situs resmi PPDB atau hubungi sekolah untuk informasi terkini.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Apa saja persyaratan masuk?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Lulus SMP/MTs, usia maksimal 21 tahun, dan memenuhi persyaratan nilai rapor sesuai jurusan yang dipilih.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Apakah ada beasiswa?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ya, tersedia beasiswa untuk siswa berprestasi dan kurang mampu melalui program pemerintah dan kerjasama industri.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>SMK Negeri 1 Cikarang Selatan</h3>
+                    <p>Sekolah Menengah Kejuruan yang berkomitmen mencetak generasi terampil dan berkarakter.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="profil.html">Profil</a></li>
+                        <li><a href="jurusan.html">Jurusan</a></li>
+                        <li><a href="ekstrakurikuler.html">Ekstrakurikuler</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Jurusan</h4>
+                    <ul>
+                        <li><a href="jurusan.html#elektro">Teknik Elektro</a></li>
+                        <li><a href="jurusan.html#tkj">Teknik Jaringan Komputer</a></li>
+                        <li><a href="jurusan.html#mesin">Teknik Mesin</a></li>
+                        <li><a href="jurusan.html#akl">Akuntansi dan Keuangan</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Kontak</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Jalan Raya Cibarusah-Bekasi, Cikarang Selatan, Kabupaten Bekasi, Jawa Barat</li>
+                        <li><i class="fas fa-phone"></i> +62 857-1812-9171</li>
+                        <li><i class="fas fa-envelope"></i> muhammad.rheifand6
+@smk.belajar.id</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SMK Negeri 1 Cikarang Selatan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .page-header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 8rem 0 4rem;
+            margin-top: 70px;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .page-header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .contact-info-section {
+            padding: 4rem 0;
+            background: var(--light-color);
+        }
+
+        .contact-info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .contact-info-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .contact-info-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.8rem;
+            margin: 0 auto 1rem;
+        }
+
+        .contact-info-card h3 {
+            font-size: 1.2rem;
+            color: var(--dark-color);
+            margin-bottom: 1rem;
+        }
+
+        .contact-info-card p {
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .contact-form-section {
+            padding: 5rem 0;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .form-container h2,
+        .map-container h2 {
+            font-size: 2rem;
+            color: var(--dark-color);
+            margin-bottom: 1rem;
+        }
+
+        .form-description {
+            color: var(--text-color);
+            margin-bottom: 2rem;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--dark-color);
+        }
+
+        .required {
+            color: #ef4444;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 1rem;
+            font-size: 1.1rem;
+            cursor: pointer;
+            border: none;
+        }
+
+        .map-placeholder {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            aspect-ratio: 16/9;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            margin-bottom: 2rem;
+        }
+
+        .map-placeholder i {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .map-placeholder p {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .map-placeholder small {
+            opacity: 0.9;
+            display: block;
+        }
+
+        .location-info {
+            background: var(--light-color);
+            padding: 2rem;
+            border-radius: 15px;
+        }
+
+        .location-info h3 {
+            font-size: 1.3rem;
+            color: var(--dark-color);
+            margin-bottom: 1rem;
+        }
+
+        .location-info ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .location-info ul li {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .location-info i {
+            color: var(--primary-color);
+            margin-top: 3px;
+        }
+
+        .social-media-section {
+            padding: 5rem 0;
+            background: var(--light-color);
+        }
+
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .social-card {
+            background: white;
+            padding: 3rem 2rem;
+            border-radius: 15px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .social-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        .social-card.facebook {
+            background: linear-gradient(135deg, #1877f2, #0c63d4);
+        }
+
+        .social-card.instagram {
+            background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+        }
+
+        .social-card.youtube {
+            background: linear-gradient(135deg, #ff0000, #cc0000);
+        }
+
+        .social-card.twitter {
+            background: linear-gradient(135deg, #1da1f2, #0d8bd9);
+        }
+
+        .social-card i {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .social-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .social-card p {
+            opacity: 0.9;
+            font-size: 0.95rem;
+        }
+
+        .faq-section {
+            padding: 5rem 0;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: white;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: var(--light-color);
+        }
+
+        .faq-question h3 {
+            font-size: 1.1rem;
+            color: var(--dark-color);
+            margin: 0;
+        }
+
+        .faq-question i {
+            color: var(--primary-color);
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+
+        .faq-answer p {
+            padding: 0 1.5rem 1.5rem;
+            color: var(--text-color);
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .page-header h1 {
+                font-size: 2rem;
+            }
+
+            .social-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .social-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    <script src="script.js"></script>
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                const isActive = item.classList.contains('active');
+                
+                // Close all items
+                document.querySelectorAll('.faq-item').forEach(i => {
+                    i.classList.remove('active');
+                });
+                
+                // Open clicked item if it wasn't active
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
